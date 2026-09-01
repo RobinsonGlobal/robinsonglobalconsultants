@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Services | Robinson Global Consultants LLC">
+  <section class="section">
+    <h1>Security & Risk Management Services</h1>
+    <p>
+      Robinson Global Consultants LLC provides tailored security solutions grounded in decades of
+      federal, international, and high-threat operational experience.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Physical Security Assessments</h2>
+    <p>
+      Comprehensive assessments of facilities, compounds, campuses, and critical infrastructure,
+      including perimeter security, access control, CCTV/VMS, intrusion detection, and layered
+      defense strategies.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Critical Infrastructure Protection</h2>
+    <p>
+      Hardening strategies for high-value assets and data centers, with mitigation plans for civil
+      unrest, mob overruns, vandalism, vehicle ramming, and forced entry.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Emergency & Crisis Management</h2>
+    <p>
+      Development and refinement of Emergency Action Plans, crisis leadership frameworks, and
+      multi-agency exercises to ensure operational readiness and continuity.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Investigations & Threat Analysis</h2>
+    <p>
+      Enterprise investigations, incident reviews, insider-threat analysis, and protective
+      intelligence to identify vulnerabilities and inform decision-making.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Security Program Development</h2>
+    <p>
+      Design and modernization of access governance, guard force operations, identity management,
+      and security policy aligned with regulatory and organizational requirements.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Training & Workforce Preparedness</h2>
+    <p>
+      High-impact training in crisis leadership, emergency response, workplace violence
+      prevention, and safety compliance for leadership and frontline personnel.
+    </p>
+  </section>
+</BaseLayout>
