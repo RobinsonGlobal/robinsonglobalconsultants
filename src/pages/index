@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Home | Robinson Global Consultants LLC">
+  <section class="hero">
+    <h1>Strategic Security & Risk Management Consulting</h1>
+    <p>
+      Strategic Security & Public Safety Executive with 30+ years leading complex, high-risk
+      security, emergency response, investigations, and safety operations across federal,
+      international, and corporate environments.
+    </p>
+    <p>
+      Robinson Global Consultants LLC helps organizations protect people, infrastructure, and
+      critical assets through intelligence-driven security strategy and operational excellence.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Core Services</h2>
+    <ul>
+      <li>Physical Security Assessments & Surveys</li>
+      <li>Critical Infrastructure Protection</li>
+      <li>Emergency & Crisis Management</li>
+      <li>Investigations & Threat Analysis</li>
+      <li>Security Program Development & Compliance</li>
+      <li>Training & Workforce Preparedness</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Global, High-Threat Experience</h2>
+    <p>
+      Experience safeguarding U.S. diplomatic missions, critical facilities, and personnel across
+      high-threat, politically unstable, and conflict-affected regions including Burkina Faso,
+      Haiti, Libya, Afghanistan, and Guyana.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Ready to Strengthen Your Security Posture</h2>
+    <p>
+      Contact Robinson Global Consultants LLC to discuss tailored security solutions for your
+      organization.
+    </p>
+    <p><a href="/contact">Request a consultation →</a></p>
+  </section>
+</BaseLayout>
