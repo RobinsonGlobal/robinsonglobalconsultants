@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="About | Robinson Global Consultants LLC">
+  <section class="section">
+    <h1>About DeJuan Robinson</h1>
+    <p>
+      DeJuan Robinson is a Strategic Security & Public Safety Executive with 30+ years of
+      experience protecting personnel, facilities, and critical infrastructure across federal,
+      international, and corporate environments.
+    </p>
+    <p>
+      His career includes senior roles with the U.S. Department of State, Diplomatic Security
+      Service, Foreign Affairs Security Training Center, U.S. Immigration & Customs Enforcement,
+      and local law enforcement.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Global Security Leadership</h2>
+    <p>
+      DeJuan has led multidisciplinary security teams, managed multimillion-dollar budgets, and
+      directed emergency response and crisis operations in high-threat environments such as
+      Burkina Faso, Haiti, Libya, Afghanistan, and Guyana.
+    </p>
+    <p>
+      He has served as Regional Security Officer, Assistant Regional Security Officer, Special
+      Agent, Senior Law Enforcement Advisor, and Program Manager/Instructor for advanced security
+      training.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Core Expertise</h2>
+    <ul>
+      <li>Physical & Technical Security</li>
+      <li>Critical Infrastructure Protection</li>
+      <li>Risk Assessment & Mitigation</li>
+      <li>Crisis Management & Emergency Response</li>
+      <li>Investigations & Threat Intelligence</li>
+      <li>Security Construction & Project Oversight</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Education & Credentials</h2>
+    <p>
+      B.A., Sociology/Criminal Justice — Claflin University.
+    </p>
+    <p>
+      Certifications include FEMA/ICS/NIMS, GA POST, OSHA 30, Federal Criminal Investigators
+      Training, Advanced Interviewing, Field Training Officer, ASIS and CPP — Candidate.
+    </p>
+  </section>
+</BaseLayout>
