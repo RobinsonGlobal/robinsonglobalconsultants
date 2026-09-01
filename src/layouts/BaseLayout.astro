@@ -1,0 +1,100 @@
+---
+const { title = "Robinson Global Consultants LLC" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta
+      name="description"
+      content="Strategic security, risk management, and critical infrastructure protection consulting."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --bg: #f7f8fa;
+        --text: #1a1a1a;
+        --primary: #0b1f3b;
+        --accent: #c89b3c;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      header,
+      footer {
+        background: var(--primary);
+        color: #fff;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1.5rem;
+      }
+      nav a {
+        margin-right: 1rem;
+        color: #fff;
+        font-weight: 500;
+      }
+      main {
+        padding: 2rem 0;
+      }
+      h1,
+      h2,
+      h3 {
+        color: var(--primary);
+      }
+      .hero {
+        padding: 2rem 0;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero p {
+        max-width: 640px;
+      }
+      .section {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div>
+            <strong>Robinson Global Consultants LLC</strong>
+            <div style="font-size:0.85rem;">Strategic Security & Risk Management</div>
+          </div>
+          <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/case-studies">Case Studies</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+    <footer>
+      <div class="container" style="font-size:0.85rem;">
+        <div>© {new Date().getFullYear()} Robinson Global Consultants LLC</div>
+        <div>Metro Atlanta, GA • info@robinsonglobalconsultants.com • +1 (404) XXX‑XXXX</div>
+      </div>
+    </footer>
+  </body>
+</html>
