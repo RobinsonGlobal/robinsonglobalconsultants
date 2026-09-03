@@ -2,7 +2,10 @@
 import Footer from "../components/Footer.astro";
 import NavBar from "../components/NavBar.astro";
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
+
+<BaseLayout title="Services — Robinson Global Consultants LLC">
 const services = [
   {
     title: "Security & Risk Management Consulting",
@@ -137,3 +140,4 @@ const services = [
 </body>
   </body>
 </html>
+</BaseLayout>
