@@ -1,0 +1,124 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
+
+const caseStudies = [
+  {
+    title: "Corporate Facility Security Overhaul",
+    client: "Fortune 500 Logistics Company",
+    challenge:
+      "The client faced repeated unauthorized access incidents and lacked a unified physical security strategy across multiple facilities.",
+    solution:
+      "Conducted a full physical security assessment, redesigned access control workflows, implemented surveillance upgrades, and trained on‑site supervisors.",
+    outcome:
+      "Reduced unauthorized access attempts by 70% within 90 days and established a standardized security protocol across all regional facilities."
+  },
+  {
+    title: "International Risk Assessment & Operational Readiness",
+    client: "Telecommunications Provider — West Africa",
+    challenge:
+      "Rapid expansion into high‑risk regions required a comprehensive evaluation of physical, operational, and geopolitical threats.",
+    solution:
+      "Performed multi‑site risk assessments, developed emergency response plans, and trained local leadership teams on threat mitigation.",
+    outcome:
+      "Enabled safe expansion into three new markets while improving operational continuity and reducing exposure to regional security threats."
+  },
+  {
+    title: "Leadership & Compliance Transformation",
+    client: "Government Contracting Agency",
+    challenge:
+      "Leadership gaps and compliance inconsistencies were impacting operational performance and audit readiness.",
+    solution:
+      "Delivered leadership advisory sessions, rebuilt compliance workflows, and implemented accountability‑driven operational structures.",
+    outcome:
+      "Achieved full compliance within six months and improved team performance metrics across all operational units."
+  }
+];
+---
+
+<BaseLayout title="Case Studies — Robinson Global Consultants LLC">
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Case Studies — Robinson Global Consultants LLC</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background: #f7f9fc;
+          color: #1a1a1a;
+        }
+
+        .section {
+          max-width: 1100px;
+          margin: 3rem auto;
+          padding: 0 1rem;
+        }
+
+        .section h1 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          color: #0a1a2b;
+        }
+
+        .intro {
+          margin-bottom: 2rem;
+          line-height: 1.6;
+        }
+
+        .case-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 2rem;
+        }
+
+        .case-card {
+          background: white;
+          padding: 1.8rem;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+          line-height: 1.6;
+        }
+
+        .case-card h2 {
+          margin-top: 0;
+          color: #0a1a2b;
+        }
+
+        .case-card p {
+          margin: 0.5rem 0;
+        }
+      </style>
+    </head>
+
+    <body>
+      <NavBar />
+
+      <div class="section">
+        <h1>Case Studies</h1>
+
+        <p class="intro">
+          Real‑world results from decades of experience across military, federal, corporate,
+          and international environments. Each case study demonstrates our disciplined,
+          mission‑focused approach to security, risk management, and operational leadership.
+        </p>
+
+        <div class="case-grid">
+          {caseStudies.map(study => (
+            <div class="case-card">
+              <h2>{study.title}</h2>
+              <p><strong>Client:</strong> {study.client}</p>
+              <p><strong>Challenge:</strong> {study.challenge}</p>
+              <p><strong>Solution:</strong> {study.solution}</p>
+              <p><strong>Outcome:</strong> {study.outcome}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <Footer />
+    </body>
+  </html>
+</BaseLayout>
