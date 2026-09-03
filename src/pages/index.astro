@@ -2,24 +2,13 @@
 import Footer from "../components/Footer.astro";
 import NavBar from "../components/NavBar.astro";
 ---
-import NavBar from "../components/NavBar.astro";
----
----
-title: "Robinson Global Consultants"
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Robinson Global Consultants</title>
-  </head>
-  <body>
-    <NavBar />
-    <h1>Welcome to Robinson Global Consultants</h1>
-    <p>Your site is now live on Cloudflare Pages.</p>
-   <Footer /> 
-  </body>
-</html>
+<BaseLayout title="Robinson Global Consultants LLC">
+  <h1>Welcome to Robinson Global Consultants LLC</h1>
+  <p>Your site is now live on Cloudflare Pages.</p>
+</BaseLayout>
 ---
 const services = [
   {
