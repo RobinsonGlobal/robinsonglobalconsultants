@@ -1,143 +1,133 @@
 ---
-import Footer from "../components/Footer.astro";
-import NavBar from "../components/NavBar.astro";
----
 import BaseLayout from "../layouts/BaseLayout.astro";
+import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <BaseLayout title="Services — Robinson Global Consultants LLC">
-const services = [
-  {
-    title: "Security & Risk Management Consulting",
-    description:
-      "We deliver comprehensive security assessments, risk mitigation strategies, and tailored protection plans for organizations operating in corporate, government, and international environments. Our approach blends Marine Corps discipline with federal security expertise to ensure your organization is prepared for evolving threats."
-  },
-  {
-    title: "Physical Security Assessments",
-    description:
-      "Detailed evaluations of access control, surveillance systems, alarm infrastructure, perimeter security, and facility vulnerabilities. We provide actionable recommendations that strengthen your physical security posture and reduce exposure to operational risks."
-  },
-  {
-    title: "Operations & Organizational Readiness",
-    description:
-      "We analyze workflows, operational structures, and organizational processes to identify gaps and inefficiencies. Our readiness planning ensures your teams are aligned, equipped, and prepared to execute mission‑critical operations with clarity and confidence."
-  },
-  {
-    title: "Training & Compliance",
-    description:
-      "Customized training programs designed to elevate team performance, reinforce compliance, and strengthen organizational accountability. We support policy development, regulatory alignment, and internal audit preparation to keep your organization compliant and mission‑ready."
-  },
-  {
-    title: "Executive & Leadership Advisory",
-    description:
-      "Leadership guidance informed by decades of military and federal service. We help executives build disciplined teams, improve decision‑making, and establish operational frameworks that support long‑term organizational success."
-  },
-  {
-    title: "International Security Support",
-    description:
-      "Experience across Africa, the Middle East, and global environments enables us to support international operations with cultural awareness, risk intelligence, and mission‑focused planning. We help organizations navigate complex global security landscapes with confidence."
-  }
-];
----
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Services — Robinson Global Consultants LLC</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background: #f7f9fc;
+          color: #1a1a1a;
+        }
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Services — Robinson Global Consultants LLC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: #f7f9fc;
-        color: #1a1a1a;
-      }
+        .section {
+          max-width: 1100px;
+          margin: 3rem auto;
+          padding: 0 1rem;
+        }
 
-      header {
-        background: #0a1a2b;
-        color: white;
-        padding: 2rem;
-        text-align: center;
-      }
+        .section h1 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          color: #0a1a2b;
+        }
 
-      header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-      }
+        .card {
+          background: white;
+          padding: 2rem;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+          line-height: 1.6;
+          margin-bottom: 2rem;
+        }
 
-      .section {
-        max-width: 900px;
-        margin: 3rem auto;
-        padding: 0 1rem;
-      }
+        .card h2 {
+          margin-top: 1rem;
+          color: #0a1a2b;
+        }
 
-      .section h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        color: #0a1a2b;
-      }
+        .card p {
+          margin: 0.8rem 0;
+        }
 
-      .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-        margin-top: 2rem;
-      }
+        ul {
+          margin: 1rem 0;
+          padding-left: 1.2rem;
+        }
 
-      .service-card {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        line-height: 1.6;
-      }
+        ul li {
+          margin: 0.5rem 0;
+        }
+      </style>
+    </head>
 
-      .service-card h3 {
-        margin-top: 0;
-        color: #0a1a2b;
-      }
+    <body>
+      <NavBar />
 
-      footer {
-        text-align: center;
-        padding: 2rem;
-        background: #0a1a2b;
-        color: white;
-        margin-top: 3rem;
-      }
-    </style>
-  </head>
+      <div class="section">
+        <h1>Our Services</h1>
 
-  <body>
-    <NavBar />
-    <header>
-      <h1>Our Services</h1>
-      <p>Security • Risk Management • Operational Leadership</p>
-    </header>
+        <div class="card">
+          <h2>Security Assessments & Risk Management</h2>
+          <p>
+            We help organizations identify vulnerabilities, strengthen physical security,
+            and implement practical, mission‑aligned risk mitigation strategies. Our
+            assessments are grounded in real‑world operational experience across federal,
+            corporate, and international environments.
+          </p>
+          <ul>
+            <li>Comprehensive security assessments</li>
+            <li>Risk and threat analysis</li>
+            <li>Physical security evaluations (CCTV, access control, alarms)</li>
+            <li>Policy and procedure review</li>
+          </ul>
+        </div>
 
-    <div class="section">
-      <h2>What We Deliver</h2>
-      <p>
-        Robinson Global Consultants LLC provides strategic, disciplined, and mission‑focused
-        solutions designed to strengthen organizational security, elevate operational readiness,
-        and support leadership at every level. Our services are built on decades of experience
-        across military, federal, and international environments.
-      </p>
+        <div class="card">
+          <h2>Operational Readiness & Crisis Planning</h2>
+          <p>
+            Strong organizations are built on readiness, accountability, and disciplined
+            operational direction. We support leaders in building crisis‑ready teams and
+            establishing processes that perform under pressure.
+          </p>
+          <ul>
+            <li>Emergency and crisis planning</li>
+            <li>Operational readiness evaluations</li>
+            <li>Incident response planning</li>
+            <li>Continuity of operations (COOP) support</li>
+          </ul>
+        </div>
 
-      <div class="services-grid">
-        {services.map(service => (
-          <div class="service-card">
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-          </div>
-        ))}
+        <div class="card">
+          <h2>Leadership Advisory & Organizational Discipline</h2>
+          <p>
+            With decades of leadership experience across military, federal, and global
+            security environments, we help organizations build disciplined, accountable
+            teams capable of executing mission‑critical objectives.
+          </p>
+          <ul>
+            <li>Leadership coaching and advisory</li>
+            <li>Organizational discipline development</li>
+            <li>Team performance optimization</li>
+            <li>Executive guidance on security and operations</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Corporate & Government Security Support</h2>
+          <p>
+            We provide strategic support for corporate security departments, government
+            agencies, and international operations seeking to enhance safety, strengthen
+            processes, and elevate operational performance.
+          </p>
+          <ul>
+            <li>Security program development</li>
+            <li>Policy creation and refinement</li>
+            <li>Protective operations guidance</li>
+            <li>International security support</li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <footer>
-      <p>© {new Date().getFullYear()} Robinson Global Consultants LLC</p>
-    </footer>
-  <Footer />
-</body>
-  </body>
-</html>
+      <Footer />
+    </body>
+  </html>
 </BaseLayout>
