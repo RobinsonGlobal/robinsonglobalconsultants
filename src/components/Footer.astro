@@ -1,0 +1,70 @@
+<footer>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>Robinson Global Consultants LLC</h3>
+      <p>Security • Risk Management • Operational Leadership</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/contact">Contact</a>
+    </div>
+
+    <div class="footer-info">
+      <p>Metro Atlanta, GA</p>
+      <p>© {new Date().getFullYear()} Robinson Global Consultants LLC</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background: #0a1a2b;
+    color: white;
+    padding: 2.5rem 1rem;
+    margin-top: 3rem;
+  }
+
+  .footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+
+  .footer-brand h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+  }
+
+  .footer-brand p {
+    margin-top: 0.5rem;
+    opacity: 0.85;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+  }
+
+  .footer-links a:hover {
+    opacity: 0.7;
+  }
+
+  .footer-info p {
+    margin: 0.3rem 0;
+    opacity: 0.85;
+  }
+</style>
