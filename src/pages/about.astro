@@ -2,7 +2,10 @@
 import Footer from "../components/Footer.astro";
 import NavBar from "../components/NavBar.astro";
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
+
+<BaseLayout title="About — Robinson Global Consultants LLC">
 const experience = [
   "United States Marine Corps — Active Duty (1991–1995)",
   "U.S. Department of State — Diplomatic Security Service",
@@ -141,3 +144,4 @@ const experience = [
     <Footer />
   </body>
 </html>
+</BaseLayout>
