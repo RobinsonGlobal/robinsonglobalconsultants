@@ -2,7 +2,10 @@
 import Footer from "../components/Footer.astro";
 import NavBar from "../components/NavBar.astro";
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
+
+<BaseLayout title="Contact — Robinson Global Consultants LLC">
 const contactInfo = {
   email: "info@robinsonglobalconsultants.com",
   location: "Metro Atlanta, GA",
@@ -143,3 +146,4 @@ const contactInfo = {
     <Footer />
   </body>
 </html>
+</BaseLayout>
