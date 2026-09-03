@@ -1,0 +1,26 @@
+:root {
+  --rgc-navy: #0A1A2B;
+  --rgc-steel: #1F3A56;
+  --rgc-emerald: #2E8B57;
+
+  --rgc-gray: #4A4A4A;
+  --rgc-slate: #6E7A87;
+  --rgc-white: #F7F9FC;
+
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+}
+body {
+  background: var(--rgc-white);
+  color: var(--rgc-gray);
+  font-family: var(--font-primary);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-secondary);
+  color: var(--rgc-navy);
+}
+
+button {
+  background: var(--rgc-emerald);
+}
